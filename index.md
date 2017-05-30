@@ -48,13 +48,13 @@ Client-Side File Export | Downloadify Flash Component
 <br/><br/>
 
 ---
-# Installation Instructions
+# Installation Guidelines
 
-Instructions for setting up Addendum Builder can be found below.  The basic steps are:
+Guidelines for setting up your own instance of Addendum Builder can be found below.  The basic steps are:
  - Setup the database
  - Clone/copy the code to your local environment
  - Edit the web.config to include your database connection info
- - Install the .NET code to the web server
+ - Deploy the .NET code to the web server
 
 It probably goes without saying, but you'll want to review the code and its associated components to ensure that they meet your organization's security standards.
 
@@ -64,7 +64,7 @@ It probably goes without saying, but you'll want to review the code and its asso
 
 ### STEP 1: Setup the Database
 
-Create a Microsoft SQL Database by executing this script:
+Create a Microsoft SQL Database for this application by executing a script like this:
 
 ```
 GO
@@ -129,12 +129,12 @@ Upon execution, you should have four tables in your database:
 
 Table | Description
 --- | ---
-Docs | Holds finished documents
-ExportTemplates | Holds the base template for output to Microsoft Word
-Peeps | People to which each document is associated
+Docs | Holds the finished addendum/contract files in text format
+ExportTemplates | Stores the base template for output to Microsoft Word
+Peeps | Holds the people to which each addendum/contract is associated
 SystemUsers | Stores the users of the Addendum Builder system
 
-Note that all data in the database is stored in an encrypted format, and is never unencrypted on the server.  It is transmitted to the browser in an encrypted format, and unencrypted there using the Crypto-JS package.
+Note that all data in the database is stored in an encrypted format, and is never unencrypted on the server.  It is transmitted to the browser in an encrypted format, and unencrypted on the end-user's machine using the Crypto-JS package.
 
 <br/>
 
@@ -153,6 +153,24 @@ Follow standard practices to pull a copy of the code into your environment.
 ### Step 3: Edit the Web.config File
 
 You will need to edit the line in the `web.config` file that contains the details of the database connection.
+
+Find this line:
+
+```
+<connectionStrings>
+  <add name="connection187" connectionString="Data Source=**DATABASE-SERVER_NAME**;Initial Catalog=**DATABASE_NAME**;Integrated Security=False;User ID=**USERNAME**;Password=**PASSWORD**;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False"/>
+</connectionStrings>
+```
+... and replace the placeholders in bold with the appropriate values based on the database that you setup previously in Step 1.
+
+Review the additional `web.config` settings to ensure they are appropriate for your environment.
+
+<br/>
+
+---
+### Step 4: Deploy the .NET Code to the Web Server
+
+You'll need to deploy the code to an IIS server running 
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
