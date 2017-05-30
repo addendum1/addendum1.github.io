@@ -1,12 +1,28 @@
 # Addendum Builder
 
-Addendum Builder is a custom software tool that makes it easier to build documents consisting of contractual language.  Addendum Builder helps you build documents faster, eliminate mistakes, and keep docs organized as well.
+Addendum Builder is a custom software tool that makes it easier to build documents that contain contractual language.  Addendum Builder helps you build documents faster, eliminate mistakes, and keep docs organized as well.
 
-The software in this repository is open-sourced under the MIT license, which means you can take it and use it for your own purposes for free.  You can modify it, sell it, or basically do whatever you want with it.  For more details on the MIT license, check it out here:  <link>.
+The software in this repository is open-sourced under the MIT license, which means you can take it and use it for your own purposes for free.  You can modify it, sell it, or basically do whatever you want with it, as long as you include the licensing information in your work.
 
-As per the license, this software is provided "as is", without warranty of any kind.  If you dowmload the software and use it for your own purposes, you are using it at your own risk.  Again, see the MIT license for more info:  <link>.  From the license:
+As per the license, this software is provided "as is", without warranty of any kind.  If you download the software and use it for your own purposes, you are using it at your own risk.
 
-> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+Here is the (mercifully short) full text of the license:
+
+> MIT License
+>
+>Copyright (c) 2017 AddendumBuilder
+>
+>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+>
+>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+>
+>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -40,7 +56,7 @@ Instructions for setting up Addendum Builder can be found below.  The basic step
  - Edit the web.config to include your database connection info
  - Install the .NET code to the web server
 
-Detailed instructions follow...
+It probably goes without saying, but you'll want to review the code and its associated components to ensure that they meet your organization's security standards.
 
 <br/>
 
@@ -111,6 +127,8 @@ GO
 ```
 Upon execution, you should have four tables in your database:
 
+Table | Description
+--- | ---
 Docs | Holds finished documents
 ExportTemplates | Holds the base template for output to Microsoft Word
 Peeps | People to which each document is associated
@@ -118,10 +136,23 @@ SystemUsers | Stores the users of the Addendum Builder system
 
 Note that all data in the database is stored in an encrypted format, and is never unencrypted on the server.  It is transmitted to the browser in an encrypted format, and unencrypted there using the Crypto-JS package.
 
----
+<br/>
 
+---
 ### STEP 2: Clone/Copy the Code
 
+You can find the code in the Github repository, located here:
+
+LINK!!!!!!!!!!!
+
+Follow standard practices to pull a copy of the code into your environment.
+
+<br/>
+
+---
+### Step 3: Edit the Web.config File
+
+You will need to edit the line in the `web.config` file that contains the details of the database connection.
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
