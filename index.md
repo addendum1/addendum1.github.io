@@ -1,8 +1,20 @@
-## Welcome to GitHub Pages
+## Addendum Builder
 
-You can use the [editor on GitHub](https://github.com/addendum1/addendum1.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Addendum Builder is a custom software tool that makes it easier to build documents consisting of contractual language.  Addendum Builder helps you build documents faster, eliminate mistakes, and keep docs organized as well.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The software in this repository is open-sourced under the MIT license, which means you can take it and use it for your own purposes for free.  You can modify it, sell it, or basically do whatever you want with it.  For more details on the MIT license, check it out here:  <link>.
+
+As per the license, this software is provided "as is", without warranty of any kind.  If you dowmload the software and use it for your own purposes, you are using it at your own risk.  Again, see the MIT license for more info:  <link>.  From the license:
+
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
 
 ### Markdown
 
