@@ -1,4 +1,4 @@
-## Addendum Builder
+# Addendum Builder
 
 Addendum Builder is a custom software tool that makes it easier to build documents consisting of contractual language.  Addendum Builder helps you build documents faster, eliminate mistakes, and keep docs organized as well.
 
@@ -14,9 +14,22 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+---
 
+## Technology
 
-### Markdown
+Addendum Builder uses the following technologies:
+
+Component | Technology
+--- | ---
+Code | C#/.Net, HTML, JavaScript
+Database | Microsoft SQL Server (SQL Server 2012 or above recommended)
+Encryption | [Crypto-JS](https://code.google.com/archive/p/crypto-js/)
+Date Picker Control | [CibulCalendar](https://github.com/kaore/CibulCalendar)
+
+## Installation Instructions
+
+### STEP 1: Setup the Database
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
