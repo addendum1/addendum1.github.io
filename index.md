@@ -17,9 +17,6 @@ SOFTWARE.
 <br/><br/>
 
 ---
-
-<br/>
-
 # Technology
 
 Addendum Builder uses the following technologies:
@@ -35,9 +32,6 @@ Client-Side File Export | Downloadify Flash Component
 <br/><br/>
 
 ---
-
-<br/>
-
 # Installation Instructions
 
 Instructions for setting up Addendum Builder can be found below.  The basic steps are:
@@ -47,6 +41,8 @@ Instructions for setting up Addendum Builder can be found below.  The basic step
  - Install the .NET code to the web server
 
 Detailed instructions follow...
+
+<br/>
 
 ---
 
