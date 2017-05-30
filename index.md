@@ -7,6 +7,7 @@ The software in this repository is open-sourced under the MIT license, which mea
 As per the license, this software is provided "as is", without warranty of any kind.  If you download the software and use it for your own purposes, you are using it at your own risk.
 
 Here is a link to the (mercifully short) full text of the Addendum Builder MIT license:
+  
 https://github.com/addendum1/addendumbuilder/blob/master/LICENSE
 
 <br/><br/>
