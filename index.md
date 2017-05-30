@@ -14,9 +14,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+<br/><br/>
+
 ---
 
-## Technology
+<br/>
+
+# Technology
 
 Addendum Builder uses the following technologies:
 
@@ -28,7 +32,13 @@ Encryption | [Crypto-JS](https://code.google.com/archive/p/crypto-js/)
 Date Picker Control | [CibulCalendar](https://github.com/kaore/CibulCalendar)
 Client-Side File Export | Downloadify Flash Component
 
-## Installation Instructions
+<br/><br/>
+
+---
+
+<br/>
+
+# Installation Instructions
 
 Instructions for setting up Addendum Builder can be found below.  The basic steps are:
  - Setup the database
@@ -42,7 +52,68 @@ Detailed instructions follow...
 
 ### STEP 1: Setup the Database
 
+Create a Microsoft SQL Database by executing this script:
 
+```
+USE [rb_addendum1]
+GO
+/****** Object:  Table [dbo].[Docs]    Script Date: 5/29/2017 5:21:00 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Docs](
+	[Id] [int] NOT NULL,
+	[PeepID] [int] NOT NULL,
+	[ActiveAsOf] [nvarchar](50) NULL,
+	[Status] [nvarchar](50) NULL,
+	[DocXML] [nvarchar](max) NOT NULL,
+	[MaxVal] [int] NULL,
+	[DocType] [nvarchar](50) NULL,
+	[CreatedDate] [nvarchar](50) NULL,
+	[CreatedBy] [nvarchar](50) NULL,
+	[LastUpdatedDate] [nvarchar](50) NULL,
+	[LastUpdatedBy] [nvarchar](50) NULL,
+	[CnNum] [nvarchar](50) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ExportTemplates]    Script Date: 5/29/2017 5:21:00 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ExportTemplates](
+	[Id] [int] NOT NULL,
+	[Title] [nvarchar](50) NOT NULL,
+	[Header] [nvarchar](max) NULL,
+	[Footer] [nvarchar](max) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Peeps]    Script Date: 5/29/2017 5:21:00 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Peeps](
+	[Id] [int] NOT NULL,
+	[PersonEID] [nvarchar](max) NOT NULL,
+	[Year] [nvarchar](250) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[SystemUsers]    Script Date: 5/29/2017 5:21:00 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[SystemUsers](
+	[Id] [int] NOT NULL,
+	[HashedUserID] [nvarchar](500) NOT NULL,
+	[HashedUserPW] [nvarchar](500) NOT NULL,
+	[Hint] [nvarchar](50) NULL,
+	[EditTemplate] [bit] NULL
+) ON [PRIMARY]
+GO
+```
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
