@@ -154,14 +154,11 @@ Follow standard practices to pull a copy of the code into your environment.
 
 You will need to edit the line in the `web.config` file that contains the details of the database connection.
 
-Find this line:
+Find this line in the `connectionStrings` section:
 
-```
-<connectionStrings>
-  <add name="connection187" connectionString="Data Source=**DATABASE-SERVER_NAME**;Initial Catalog=**DATABASE_NAME**;Integrated Security=False;User ID=**USERNAME**;Password=**PASSWORD**;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False"/>
-</connectionStrings>
-```
-... and replace the placeholders in bold with the appropriate values based on the database that you setup previously in Step 1.
+> \<add name="connection187" connectionString="Data Source=**DATABASE_SERVER_NAME**;Initial Catalog=**DATABASE_NAME**;Integrated Security=False;User ID=**USERNAME**;Password=**PASSWORD**;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False"/\>
+
+... and replace the placeholders (in bold above) with the appropriate values based on the database that you setup previously in Step 1.
 
 Review the additional `web.config` settings to ensure they are appropriate for your environment.
 
@@ -170,35 +167,9 @@ Review the additional `web.config` settings to ensure they are appropriate for y
 ---
 ### Step 4: Deploy the .NET Code to the Web Server
 
-You'll need to deploy the code to an IIS server running 
+You'll need to deploy the code to a Microsoft IIS server running .NET 4.0 or above.
 
+In Visual Studio, you'll want to set the Start Action to this specific page: `AddendumBuilder.aspx`.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Build the project in Visual Studio and deploy to the web server.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/addendum1/addendum1.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
