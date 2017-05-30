@@ -26,10 +26,23 @@ Code | C#/.Net, HTML, JavaScript
 Database | Microsoft SQL Server (SQL Server 2012 or above recommended)
 Encryption | [Crypto-JS](https://code.google.com/archive/p/crypto-js/)
 Date Picker Control | [CibulCalendar](https://github.com/kaore/CibulCalendar)
+Client-Side File Export | Downloadify Flash Component
 
 ## Installation Instructions
 
+Instructions for setting up Addendum Builder can be found below.  The basic steps are:
+ - Setup the database
+ - Clone/copy the code to your local environment
+ - Edit the web.config to include your database connection info
+ - Install the .NET code to the web server
+
+Detailed instructions follow...
+
+---
+
 ### STEP 1: Setup the Database
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
