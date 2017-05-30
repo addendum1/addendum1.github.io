@@ -123,9 +123,11 @@ Note that all data in the database is stored in an encrypted format, and is neve
 
 You can find the code in the Github repository, located here:
 
-LINK!!!!!!!!!!!
+https://github.com/addendum1/addendumbuilder
 
 Follow standard practices to pull a copy of the code into your environment.
+
+To open and review the code, open the `ContractBuilder1.csproj` file using Visual Studio.
 
 <br/>
 
@@ -153,7 +155,7 @@ In Visual Studio, you'll want to set the Start Action to this specific page: `Ad
 
 Build the project in Visual Studio and deploy to the web server.
 
-If you run into build issues, be sure to check the project's References are all there:
+If you run into build issues, be sure to check that the project's necessary References are all there:
 
 ![http://i.imgur.com/cRPhwfq.png](http://i.imgur.com/cRPhwfq.png)
 
@@ -161,5 +163,8 @@ If you run into build issues, be sure to check the project's References are all 
 
 ---
 
+# Support / Maintenance
+
+No support or maintenance is offered for this repository.  This repository is not actively maintained.
 
 
