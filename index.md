@@ -51,9 +51,8 @@ Detailed instructions follow...
 Create a Microsoft SQL Database by executing this script:
 
 ```
-USE [rb_addendum1]
 GO
-/****** Object:  Table [dbo].[Docs]    Script Date: 5/29/2017 5:21:00 PM ******/
+/****** Object:  Table [dbo].[Docs] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -73,7 +72,7 @@ CREATE TABLE [dbo].[Docs](
 	[CnNum] [nvarchar](50) NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ExportTemplates]    Script Date: 5/29/2017 5:21:00 PM ******/
+/****** Object:  Table [dbo].[ExportTemplates] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -85,7 +84,7 @@ CREATE TABLE [dbo].[ExportTemplates](
 	[Footer] [nvarchar](max) NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Peeps]    Script Date: 5/29/2017 5:21:00 PM ******/
+/****** Object:  Table [dbo].[Peeps] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -96,7 +95,7 @@ CREATE TABLE [dbo].[Peeps](
 	[Year] [nvarchar](250) NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[SystemUsers]    Script Date: 5/29/2017 5:21:00 PM ******/
+/****** Object:  Table [dbo].[SystemUsers] ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -110,6 +109,20 @@ CREATE TABLE [dbo].[SystemUsers](
 ) ON [PRIMARY]
 GO
 ```
+Upon execution, you should have four tables in your database:
+
+Docs | Holds finished documents
+ExportTemplates | Holds the base template for output to Microsoft Word
+Peeps | People to which each document is associated
+SystemUsers | Stores the users of the Addendum Builder system
+
+Note that all data in the database is stored in an encrypted format, and is never unencrypted on the server.  It is transmitted to the browser in an encrypted format, and unencrypted there using the Crypto-JS package.
+
+---
+
+### STEP 2: Clone/Copy the Code
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
