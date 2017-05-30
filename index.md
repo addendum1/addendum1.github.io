@@ -8,7 +8,7 @@ As per the license, this software is provided "as is", without warranty of any k
 
 Here is a link to the (mercifully short) full text of the Addendum Builder MIT license:
   
-https://github.com/addendum1/addendumbuilder/blob/master/LICENSE
+[https://github.com/addendum1/addendumbuilder/blob/master/LICENSE](https://github.com/addendum1/addendumbuilder/blob/master/LICENSE)
 
 <br/><br/>
 
@@ -123,7 +123,7 @@ Note that all data in the database is stored in an encrypted format, and is neve
 
 You can find the code in the Github repository, located here:
 
-https://github.com/addendum1/addendumbuilder
+[https://github.com/addendum1/addendumbuilder](https://github.com/addendum1/addendumbuilder)
 
 Follow standard practices to pull a copy of the code into your environment.
 
