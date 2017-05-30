@@ -1,6 +1,6 @@
 # Addendum Builder
 
-Addendum Builder is a custom software tool that makes it easier to build documents that contain contractual language.  Addendum Builder helps you build documents faster, eliminate mistakes, and keep docs organized as well.
+Addendum Builder is a custom software tool that makes it easier to build contract-related documents.  Addendum Builder helps you build documents faster, eliminate mistakes, and keep docs organized as well.
 
 The software in this repository is open-sourced under the MIT license, which means you can take it and use it for your own purposes for free.  You can modify it, sell it, or basically do whatever you want with it, as long as you include the licensing information in your work.
 
